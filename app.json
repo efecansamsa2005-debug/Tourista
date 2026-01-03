@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Tourista",
+    "slug": "tourista",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FF9800"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tourista.app",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-2102832340082050~1233797754"
+      },
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "This app uses ads to support free features and development.",
+        "SKAdNetworkItems": [
+          {
+            "SKAdNetworkIdentifier": "cstr6suwn9.skadnetwork"
+          }
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FF9800"
+      },
+      "package": "com.tourista.app",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-2102832340082050~7727053919"
+      }
+    },
+    "plugins": [
+      [
+        "expo-ads-admob",
+        {
+          "userTrackingPermission": "This app uses ads to support free features and development."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "64d16db4-c8a2-4814-ad41-844357feb422"
+      }
+    }
+  }
+}
